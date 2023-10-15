@@ -1,3 +1,0 @@
-
-# df.columns:   This attribute returns a list of the column names in the DataFrame.
-
