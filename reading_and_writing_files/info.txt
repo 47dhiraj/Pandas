@@ -1,0 +1,13 @@
+
+
+# df.info(): df.info() is a method in Pandas that provides a summary of the information about a Pandas DataFrame. 
+            It gives information about the column data types, the number of non-null values, and the memory usage of the DataFrame.
+
+
+    The output of df.info() includes the following information for each column:
+
+        ==> The column name
+        ==> The number of non-null values in the column
+        ==> The data type of the column
+        ==> The memory usage of the column
+    

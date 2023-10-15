@@ -1,0 +1,22 @@
+
+# Here are some commonly used data preprocessing/cleaning methods in pandas:
+
+    1. Handling Missing Data: Pandas provides methods to handle missing data, such as 
+                                `isna()` to check for missing values, 
+                                `fillna()` to fill missing values, 
+                                & `dropna()` to drop rows or columns with missing data.
+
+    2. Data Conversion: Pandas provides methods to convert data types, such as 
+                                `astype()` to convert a column to a different data type 
+                                & `to_datetime()` to convert a column to a datetime data type.
+
+
+    3. Removing Duplicates: Pandas provides a `drop_duplicates()` method to remove duplicate rows from a DataFrame.
+
+
+    4. Renaming Columns: Pandas provides a `rename()` method to rename columns in a DataFrame.
+
+
+These are just some of the commonly used data preprocessing/cleaning methods in pandas. 
+
+There are many more methods available in pandas to perform various data manipulation tasks.

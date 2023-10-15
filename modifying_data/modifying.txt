@@ -1,0 +1,22 @@
+
+.at[] and .loc[]: These are both indexing methods for accessing specific values in a pandas DataFrame.
+                The .at[] method is used for accessing a single value at a specific row and column, while the .loc[] method is used for accessing a subset of the DataFrame based on specified rows and columns.
+
+
+
+map(): This method is used to apply a function to each element in a pandas Series. 
+        The function can be specified as a lambda function or a named function.
+
+
+
+apply(): This method is used to apply a function along a specified axis of a pandas DataFrame or a series object. 
+        The function can be specified as a lambda function or a named function.
+
+
+
+applymap(): This method is used to apply a function to each element in a pandas DataFrame. 
+            Unlike apply(), this method applies the function element-wise to all cells of the DataFrame.
+
+
+replace(): This method is used to replace values in a pandas DataFrame or Series. 
+            The old value is specified as the first argument, and the new value is specified as the second argument.

@@ -1,0 +1,89 @@
+
+# Pivot Table:
+
+==> A pivot table is a data summarization tool that allows you to summarize and aggregate data in a table format. 
+    
+    It allows you to reorganize, aggregate, and summarize data based on one or more columns of a dataframe. 
+    
+    The pivot table takes simple column-wise data as input, and groups the entries into a two-dimensional table that provides a multidimensional analysis of the data.
+
+
+==> A pivot table is typically created to analyze and summarize data, to find patterns and trends, to identify outliers, to perform data analysis, and to derive insights that can help make better decisions.
+
+
+
+SYNTAX: pd.pivot_table(df, values=columnname, index=None, columns=None, aggfunc='mean', fill_value=None, margins=False, dropna=True, margins_name='All')
+
+ANOTHER SYNTAX: df.pivot_table(values=columnname, index=None, columns=None, aggfunc='mean', fill_value=None, margins=False, dropna=True, margins_name='All')
+
+
+
+    # Various parameters of pivot_table() function:
+
+        1. data: This is the input data frame.
+
+        2. values: This parameter specifies the column to aggregate. 
+                    If not specified, all columns except the pivot columns are aggregated.
+
+        3. index: This parameter specifies the column(s) to use as the row index(es) in the pivot table.
+
+        4. columns: This parameter specifies the column(s) to use as the column index(es) in the pivot table.
+
+        5. aggfunc: This parameter specifies the function to use for aggregation. 
+                    By default, it is set to 'mean'. Other common aggregation functions include 'sum', 'count', 'min', 'max', 'std', and 'var'.
+
+        6. fill_value: This parameter specifies the value to replace missing values with.
+
+        7. margins: This parameter specifies whether to include row and column totals in the pivot table. 
+                    By default, it is set to False.
+
+        8. dropna: This parameter specifies whether to exclude rows or columns with missing values from the pivot table. By default, it is set to True.
+
+        9. margins_name: This parameter specifies the name of the row and column totals.
+                        By default, it is set to 'All'.
+
+
+        U customize these parameters as per your specific requirements to create a pivot table that suits your needs/requirements.
+
+
+
+    # One EXAMPLE of Pivot Table:
+
+        Suppose you have a dataset of sales transactions for a company that sells different products in different regions, and you want to summarize the sales data by product and by region. 
+        
+            You can create a pivot table to aggregate the sales data by product and by region as follows:
+
+            import pandas as pd
+
+            # create a sample dataframe
+            data = {
+                'product': ['A', 'A', 'B', 'B', 'A', 'B', 'A', 'B'],
+                'region': ['North', 'South', 'North', 'South', 'North', 'South', 'North', 'South'],
+                'sales': [10, 20, 15, 25, 30, 35, 40, 45]
+            }
+            
+            df = pd.DataFrame(data)
+
+            # create a pivot table to summarize the sales data by product and by region
+            pivot_table = pd.pivot_table(df, values='sales', index=['product'], columns=['region'], aggfunc=sum)
+
+            print(pivot_table)
+
+
+        OUTPUT:
+
+            region   North  South
+            product              
+            A           40     20
+            B           55     80
+
+
+    In above example, the pivot table summarizes the sales data by product and by region. 
+
+    The rows of the pivot table represent the products, and the columns represent the regions. 
+
+    The values in the pivot table are the sum of sales for each product in each region. 
+
+    The pivot table allows you to quickly see that product B has higher sales than product A in both regions.
+
+

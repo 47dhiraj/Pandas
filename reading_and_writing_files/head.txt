@@ -1,0 +1,6 @@
+
+# df.head(): df.head() is a method used to display the first few rows of a DataFrame object df.
+
+    By default, df.head() returns the first 5 rows of the DataFrame. 
+    However, you can also pass an argument to the method (eg: df.head(n) ) to specify the number of rows you want to display, like df.head(10) will display the first 10 rows of the DataFrame.
+

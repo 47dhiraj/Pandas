@@ -1,0 +1,12 @@
+
+
+
+# Three ways to use Apply function in dataframe or series object:
+
+
+        1st way.  Use a built in function.
+
+        2nd way.  Create your own custon function.
+
+        3rd way.  Use a Lambda function
+

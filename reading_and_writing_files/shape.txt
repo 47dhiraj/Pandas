@@ -1,0 +1,18 @@
+
+# df.shape: It returns a tuple representing the dimensions of the DataFrame.
+
+NOTE: It's important to note that df.shape is an attribute, not a method, so it doesn't require parentheses. 
+        So, you would access it like df.shape rather than df.shape().
+
+
+==> The df.shape attribute returns a tuple with two elements, where the first element is the number of rows in the DataFrame and the second element is the number of columns in the DataFrame. 
+    So, df.shape returns the shape of the DataFrame in the format (number of rows, number of columns).
+
+
+NOTE: This attribute is commonly used to check the size of a DataFrame and to ensure that data has been loaded correctly into the DataFrame. 
+
+
+==> For example:
+                You might use df.shape[0] to get the number of rows in the DataFrame 
+                You might use df.shape[1] to get the number of columns in the DataFrame
+

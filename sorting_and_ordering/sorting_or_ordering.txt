@@ -1,0 +1,20 @@
+
+# In Pandas, sorting/ordering refers to arranging the data in a DataFrame in a particular order based on the values of one or more columns. 
+    Sorting is a common operation in data analysis as it allows for easier data exploration and helps to identify patterns or trends in the data.
+
+
+
+    ==> Pandas provides several methods for sorting data, including:
+
+            1. sort_values(): This method sorts a DataFrame or Series by one or more columns. 
+                                You can specify the column(s) to sort by and the sorting order (ascending or descending).
+
+            2. sort_index(): This method sorts a DataFrame or Series by the index (i.e., the row labels). 
+                                You can specify the sorting order (ascending or descending).
+
+            3.nlargest() and nsmallest(): These methods return the n largest or smallest values in a DataFrame or Series based on a specified column.
+
+
+
+    NOTE: By default, sorting in Pandas is done in ascending order. 
+        However, you can also sort in descending order by specifying the parameter ascending=False.

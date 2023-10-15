@@ -1,0 +1,56 @@
+
+# concat():
+
+            ==> The concat() function in Pandas is used to concatenate two or more DataFrames along a particular axis, either row-wise or column-wise. 
+
+            ==> The resulting concatenated DataFrame contains all the columns and rows from the original DataFrames.
+
+    
+    # EXAMPLE to show concat() function:
+
+
+        # Using axis = 1 (i.e concatenate next to each other):
+        
+            import pandas as pd
+
+            # create two sample DataFrames
+            df1 = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})
+            df2 = pd.DataFrame({'A': [4, 5, 6], 'B': [7, 8, 9]})
+
+            # concatenate the two DataFrames column-wise
+            result = pd.concat([df1, df2], axis=1)
+
+            print(result)
+        
+
+            OUTPUT:
+                       A  B  A  B
+                    0  1  4  4  7
+                    1  2  5  5  8
+                    2  3  6  6  9
+
+
+
+        # Using axis = 0 (i.e concatenate on top of each other):
+        
+            import pandas as pd
+
+            # create two sample DataFrames
+            df1 = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})
+            df2 = pd.DataFrame({'A': [4, 5, 6], 'B': [7, 8, 9]})
+
+            # concatenate the two DataFrames row-wise
+            result = pd.concat([df1, df2], axis=0)
+
+            print(result)
+        
+            OUTPUT:
+                           A  B
+                        0  1  4
+                        1  2  5
+                        2  3  6
+                        0  4  7
+                        1  5  8
+                        2  6  9
+
+

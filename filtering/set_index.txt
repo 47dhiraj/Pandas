@@ -1,0 +1,18 @@
+
+NOTE: pandas ma index vanni bittikai tyo jahile pani row index vanni nai bujne.
+
+# set_index(): The set_index() method in Pandas is a method that allows you to set one or more columns of a dataframe as the index/row index.
+
+    NOTE: set_index() method is not method to filter out.
+
+
+    ==> By default, a dataframe in Pandas is assigned a numeric index that starts from 0 and increments by 1 for each row. 
+        However, in many cases, you may want to use one or more columns of the dataframe as the index/row-index instead, such as when you want to perform operations that require a specific indexing scheme.
+    
+    ==> The set_index() method takes one or more column labels as its argument and returns a new dataframe with the specified column(s) set as the index. 
+        If you pass multiple column labels to the set_index() method, Pandas will create a hierarchical index with the specified columns as the levels.
+    
+    
+    # Example : df2 = df.set_index('Country')       # Country column ko basis ma index/row-index set gareko
+
+

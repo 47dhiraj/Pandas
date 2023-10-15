@@ -1,0 +1,5 @@
+
+# df.tail(): df.tail() is a method used to display the first few rows of a DataFrame object df.
+
+            By default, df.tail() returns the last 5 rows of the DataFrame. 
+            However, you can also pass an argument to the method (eg: df.tail(n) ) to specify the number of rows you want to display, like df.tail(10) will display the last 10 rows of the DataFrame.

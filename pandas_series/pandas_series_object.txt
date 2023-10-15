@@ -1,0 +1,66 @@
+
+# Series :  A pandas Series is a one-dimensional array-like object that can hold any data type such as integers, strings, floats, etc. 
+            
+            A Series consists of two arrays: one for the data and one for the index. 
+            
+            The index is a label that identifies each element in the Series, and it can be either an integer or a string.
+
+
+    NOTE: Each column in dataframe represents a series object.
+
+
+
+# How to accurately access/get series object from dataframe ??
+
+    ==> To access a series from a pandas DataFrame, you can use the indexing operator [] with the column name as the key. 
+    
+
+        EXAMPLE:
+
+                import pandas as pd
+
+                # create a sample DataFrame
+                data = {'Name': ['John', 'Alice', 'Bob', 'Charlie'],
+                        'Age': [25, 30, 20, 35],
+                        'Salary': [50000, 60000, 45000, 70000]}
+
+                df = pd.DataFrame(data)
+
+                # access the 'Name' series object
+                name_series = df['Name']
+
+                print(name_series)
+
+
+
+        EXAMPLE OUTPUT:
+
+                0       John
+                1      Alice
+                2        Bob
+                3    Charlie
+
+                Name: Name, dtype: object           # i.e series is a object vanna khojeko ho
+
+
+# How to check the data type of pandas series explicitly ??
+
+    ==> To check the data type of a series explicitly, you can use the dtype attribute.
+
+
+        EXAMPLE:
+
+                # check the data type of the 'Age' series
+                age_series = df['Age']
+                print(age_series.dtype)
+        
+
+        EXAMPLE OUTPUT:
+                int64
+        
+        This shows that the 'Age' series object has a data type of int64,
+        Which means it is a 64-bit integer.
+
+
+
+
